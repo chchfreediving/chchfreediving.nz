@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap');
+
+html {
+  background-color: #142D38;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+  background-color: #f8faff;
+}
+
+h1 {
+  font-family: 'Nunito Sans', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 70px;
+  text-align: center;
+  color: white;
+}
+
+h1.front-page {
+  background-color: #142D38;
+  background-image: url("assets/water-4k.jpg");
+  background-size: cover;
+  background-position: center bottom; 
+
+  width: 100%;
+  margin: 0;
+  min-height: calc(75vh - 34px);
+  padding-top: 25vh;
+}
+
+h1.front-page::after {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 
+  width: 100px;
+  content: "▾";
+  font-size: 80px;
+  opacity: 75%;
+  z-index: 0;
+}
+
+div.body {
+  text-align: center;
+  width: 100%;
+}
+
+span.text {
+  display: inline-block;
+  max-width: 1000px;
+  margin: 20px;
+}
+
+p {
+  text-align: justify;
+}
+
+a {
+  text-decoration: underline;
+  color: black;
+}
+
+/* TODO small displays https://www.w3schools.com/howto/howto_js_topnav_responsive.asp */
+div.header {
+  top: 0;
+  position: sticky;
+  padding: 8px;
+  padding-right: 18px;
+  text-align: right;
+  z-index: 1;
+
+  color: white;
+  font-family: 'Nunito Sans', Helvetica, Arial, sans-serif; 
+  font-weight: 500;
+  font-size: 17px;
+
+  background-color: #142D38;
+  background-image: url("assets/water-4k.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top 40vh;
+}
+
+a.header-item {
+  color: white;
+  text-decoration: none;
+
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+div.footer {
+  color: white;
+  font-size: 10px;
+  text-align: center;
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-image: url("assets/water-100.jpg");
+  background-color: #142D38;
+  background-size: cover;
+  background-position: center bottom ;
+}
+
+div.footer a {
+  color: white;
+  padding-left: 10px;
+}
+
+div.contents {
+  display: inline-block;
+  max-width: 1000px;
+  margin-bottom: 80px;
+}
+
+a.contents-item {
+  display: inline-block;
+  background-color: #142D38;
+  background-size: cover;
+  background-position: center bottom;
+
+  font-family: 'Nunito Sans', Helvetica, Arial, sans-serif; 
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+
+  width: 200px;
+  height: 40px;
+  padding: 20px;
+  padding-top: 180px;
+  margin: 20px;
+  border-radius: 3px;
+}
+
+#contents-1 {
+  background-image: url("assets/box1.jpg");  
+}
+
+#contents-2 {
+  background-image: url("assets/box2.jpg");  
+}
+
+#contents-3 {
+  background-image: url("assets/box3.jpg");  
+}
+
+#contents-4 {
+  background-image: url("assets/box4.jpg");  
+}
+
+#contents-5 {
+  background-image: url("assets/box5.jpg");  
+}
+
+#contents-6 {
+  background-image: url("assets/box6.jpg");  
+}

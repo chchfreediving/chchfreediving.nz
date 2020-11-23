@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Christchurch Freediving Club</title>
-  <link rel="stylesheet" type="text/css" href="TODO.css">
+  <link rel="stylesheet" type="text/css" href="cfc.css">
   <link rel="icon" href="aida-favicon.png">
   <meta name="author" content="Nick Cameron">
   <meta name="description" content="Website of the Christchurch Freediving Club: freedive and apnea training, education, and competition in Christchurch, Canterbury, New Zealand.">
@@ -17,9 +17,30 @@
   <meta property="twitter:image" content="https://www.chchfreediving.nz/aida-favicon.png">
  </head>
 <body>
-    <h1>Christchurch Freediving Club</h1>
-    <p>Work in progress. Please check back later...</p>
-    <p>If you're interested in freediving training in Christchurch, send us an email: <a href="mailto:info@chchfreediving.nz">info@chchfreediving.nz</a>. Pool training and inductions starting soon.</p>
-    <p>For more info on freediving in NZ, check out <a href="https://freediving.co.nz/">Freediving New Zealand</a>.</p>
+  <div class="header" id="header">
+    <a class="header-item">Start freediving</a>
+    <a class="header-item">Joining CFC</a>
+    <a class="header-item">Training with CFC</a>
+    <a class="header-item">Resources</a>
+    <a class="header-item">Contact</a>
+  </div>
+  <div class="body">
+    <h1 class="front-page" onclick="window.scrollTo({ top: this.getBoundingClientRect().bottom + window.scrollY - document.getElementById('header').getBoundingClientRect().height, left: 0, behavior: 'smooth' });">Christchurch Freediving Club</h1>
+    <span class="text">
+      <p class="front-page">Work in progress. Please check back later...</p>
+      <p class="front-page">If you're interested in freediving training in Christchurch, send us an email: <a href="mailto:info@chchfreediving.nz">info@chchfreediving.nz</a>. Pool training and inductions starting soon.</p>
+      <p class="front-page">For more info on freediving in NZ, check out <a href="https://freediving.co.nz/">Freediving New Zealand</a>.</p>
+    </span>
+    <div></div> 
+    <div class="contents">
+      <a class="contents-item" id="contents-1" tabindex="0" href="start.html">Start</a>
+      <a class="contents-item" id="contents-2" tabindex="0">Join</a>
+      <a class="contents-item" id="contents-3" tabindex="0">Train</a>
+      <a class="contents-item" id="contents-4" tabindex="0">Resources</a>
+      <a class="contents-item" id="contents-5" tabindex="0">Foo</a>
+      <a class="contents-item" id="contents-6" tabindex="0">Contact</a>
+    </div>
+  <div class="footer">Copyright 2020 Christchurch Freediving Club. <a href="privacy.html">Privacy policy</a>. <a href="credits.html">Credits</a>.</div>
+</div>
 </body>
 </html>
