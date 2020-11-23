@@ -3,14 +3,17 @@
 
 html {
   background-color: #142D38;
+  height: 100%;
 }
 
 body {
+  height: 100%;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 18px;
   padding: 0;
   margin: 0;
-  background-color: #f8faff;
+  display: flex;
+  flex-direction: column;
 }
 
 h1 {
@@ -29,7 +32,7 @@ h1.front-page {
 
   width: 100%;
   margin: 0;
-  min-height: calc(75vh - 34px);
+  min-height: 75vh;
   padding-top: 25vh;
 }
 
@@ -48,9 +51,23 @@ h1.front-page::after {
   z-index: 0;
 }
 
+h1.second-page {
+  background-color: #142D38;
+  background-image: url("assets/water-800.jpg");
+  background-size: cover;
+  background-position: center center; 
+
+  width: 100%;
+  margin: 0;
+  height: 120px;
+  padding-top: 100px;
+}
+
 div.body {
   text-align: center;
+  background-color: #f8faff;
   width: 100%;
+  flex: 1 0;
 }
 
 span.text {
@@ -71,7 +88,8 @@ a {
 /* TODO small displays https://www.w3schools.com/howto/howto_js_topnav_responsive.asp */
 div.header {
   top: 0;
-  position: sticky;
+  width: calc(100% - 26px);
+  position: fixed;
   padding: 8px;
   padding-right: 18px;
   text-align: right;
@@ -87,6 +105,12 @@ div.header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top 40vh;
+
+  transition: transform 0.3s;
+}
+
+div.header.at-top {
+  transform: translateY(-40px);
 }
 
 a.header-item {
@@ -97,11 +121,17 @@ a.header-item {
   padding-right: 10px;
 }
 
+a.header-item.home {
+  position: absolute;
+  left: 18px;
+}
+
 div.footer {
+  flex-shrink: 0;
   color: white;
   font-size: 10px;
   text-align: center;
-  margin-top: 10px;
+  /*margin-top: 10px;*/
   padding-top: 10px;
   padding-bottom: 10px;
   background-image: url("assets/water-100.jpg");

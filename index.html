@@ -18,6 +18,7 @@
  </head>
 <body>
   <div class="header" id="header">
+    <a class="header-item home" href="index.html">CFC</a>
     <a class="header-item">Start freediving</a>
     <a class="header-item">Joining CFC</a>
     <a class="header-item">Training with CFC</a>
@@ -25,11 +26,11 @@
     <a class="header-item">Contact</a>
   </div>
   <div class="body">
-    <h1 class="front-page" onclick="window.scrollTo({ top: this.getBoundingClientRect().bottom + window.scrollY - document.getElementById('header').getBoundingClientRect().height, left: 0, behavior: 'smooth' });">Christchurch Freediving Club</h1>
+    <h1 class="front-page" id="title" onclick="window.scrollTo({ top: this.getBoundingClientRect().bottom + window.scrollY - document.getElementById('header').getBoundingClientRect().height, left: 0, behavior: 'smooth' });">Christchurch Freediving Club</h1>
     <span class="text">
-      <p class="front-page">Work in progress. Please check back later...</p>
-      <p class="front-page">If you're interested in freediving training in Christchurch, send us an email: <a href="mailto:info@chchfreediving.nz">info@chchfreediving.nz</a>. Pool training and inductions starting soon.</p>
-      <p class="front-page">For more info on freediving in NZ, check out <a href="https://freediving.co.nz/">Freediving New Zealand</a>.</p>
+      <p>Work in progress. Please check back later...</p>
+      <p>If you're interested in freediving training in Christchurch, send us an email: <a href="mailto:info@chchfreediving.nz">info@chchfreediving.nz</a>. Pool training and inductions starting soon.</p>
+      <p>For more info on freediving in NZ, check out <a href="https://freediving.co.nz/">Freediving New Zealand</a>.</p>
     </span>
     <div></div> 
     <div class="contents">
@@ -43,4 +44,25 @@
   <div class="footer">Copyright 2020 Christchurch Freediving Club. <a href="privacy.html">Privacy policy</a>. <a href="credits.html">Credits</a>.</div>
 </div>
 </body>
+<script type="text/javascript">
+  let header = document.getElementById("header");
+  header.classList.add("at-top");
+  let title = document.getElementById("title");
+  title.classList.add("at-top");
+
+  function onScroll() {
+    const scollY = window.scrollY;
+    const containsAtTop = header.classList.contains("at-top");
+
+    if (scrollY != 0 && containsAtTop) {
+      header.classList.remove("at-top")
+      title.classList.remove("at-top");
+    } else if (scrollY == 0 && !containsAtTop) {
+      header.classList.add("at-top");
+      title.classList.add("at-top");
+    }
+  }
+
+  document.addEventListener('scroll', onScroll);
+</script>
 </html>
