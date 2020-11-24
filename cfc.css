@@ -59,7 +59,7 @@ h1.second-page {
 
   width: 100%;
   margin: 0;
-  height: 120px;
+  min-height: 120px;
   padding-top: 100px;
 }
 
@@ -74,15 +74,25 @@ span.text {
   display: inline-block;
   max-width: 1000px;
   margin: 20px;
+  padding-top: 20px;
 }
 
 p {
   text-align: justify;
+  margin-top: 0;
 }
 
 a {
   text-decoration: underline;
   color: black;
+}
+
+.column {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 400px;
+  margin: 20px;
+  margin-top: 0;
 }
 
 /* TODO small displays https://www.w3schools.com/howto/howto_js_topnav_responsive.asp */
