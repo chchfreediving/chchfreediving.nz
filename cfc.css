@@ -63,6 +63,15 @@ h1.second-page {
   padding-top: 100px;
 }
 
+h2 {
+  font-family: 'Nunito Sans', Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  color: black;
+  text-align: left;
+  margin-top: 0;
+}
+
 div.body {
   text-align: center;
   background-color: #f8faff;
@@ -82,6 +91,15 @@ p {
   margin-top: 0;
 }
 
+ul {
+  text-align: justify;
+  margin-bottom: 40px;
+}
+
+li {
+  margin: 5px;
+}
+
 a {
   text-decoration: underline;
   color: black;
@@ -91,8 +109,16 @@ a {
   display: inline-block;
   vertical-align: top;
   max-width: 400px;
-  margin: 20px;
   margin-top: 0;
+}
+
+span.column {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+img.column {
+  margin-bottom: 40px;
 }
 
 /* TODO small displays https://www.w3schools.com/howto/howto_js_topnav_responsive.asp */
