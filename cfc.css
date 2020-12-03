@@ -224,6 +224,7 @@ a.contents-item {
   text-align: center;
   color: white;
   text-decoration: none;
+  text-transform: uppercase;
 
   width: 200px;
   height: 40px;
