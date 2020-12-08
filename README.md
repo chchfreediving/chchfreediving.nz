@@ -12,7 +12,6 @@ Upload files in the root directory and the assets directory to a server (images 
   - join
   - train
   - news
-  - contact - links
   - resources - links
   - credits - Kristine
 * forms
