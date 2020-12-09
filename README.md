@@ -7,11 +7,10 @@ Upload files in the root directory and the assets directory to a server (images 
 # TODO
 
 * content
-  - front page
-  - start
-  - join
   - train
   - news
   - resources - links
   - credits - Kristine
 * forms
+  - start
+  - join
