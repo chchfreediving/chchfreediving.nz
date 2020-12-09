@@ -7,7 +7,6 @@ Upload files in the root directory and the assets directory to a server (images 
 # TODO
 
 * content
-  - train
   - news
   - resources - links
   - credits - Kristine
