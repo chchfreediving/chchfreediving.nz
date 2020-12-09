@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 html {
   background-color: #142D38;
@@ -7,7 +8,7 @@ html {
 
 body {
   height: 100%;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 18px;
   padding: 0;
   margin: 0;
@@ -87,7 +88,7 @@ h3 {
 
 div.body {
   text-align: center;
-  background-color: #f8faff;
+  background-color: #eafcf9;
   width: 100%;
   flex: 1 0;
 }

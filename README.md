@@ -14,3 +14,4 @@ Upload files in the root directory and the assets directory to a server (images 
 * forms
   - start
   - join
+* privacy policy - google forms?
