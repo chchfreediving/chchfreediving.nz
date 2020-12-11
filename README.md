@@ -2,12 +2,11 @@
 
 ## To deploy
 
-Upload files in the root directory and the assets directory to a server (images directory is not needed).
+Upload files in the root directory, and the assets and resources directories to a server (images directory is not needed).
 
 # TODO
 
 * content
-  - news
   - resources - links
 * forms
   - start
