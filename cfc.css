@@ -265,3 +265,8 @@ a.contents-item {
   margin-right: auto;
   padding-top: 40px;
 }
+
+p.form {
+  display: block;
+  width: 800px;
+}

@@ -8,6 +8,3 @@ Upload files in the root directory, and the assets and resources directories to 
 
 * content
   - resources - links
-* forms
-  - start
-  - join
