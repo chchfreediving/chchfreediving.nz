@@ -11,4 +11,3 @@ Upload files in the root directory, and the assets and resources directories to 
 * forms
   - start
   - join
-* privacy policy - google forms?
