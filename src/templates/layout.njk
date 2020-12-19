@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Privacy policy - Christchurch Freediving Club</title>
+  <title>{{ title }}{% if title %} - {% endif %}Christchurch Freediving Club</title>
   <link rel="stylesheet" type="text/css" href="cfc.css">
   <link rel="icon" href="assets/octo-favicon.png">
   <meta name="author" content="Nick Cameron">
-  <meta name="description" content="Website of the Christchurch Freediving Club: freedive and apnea training, education, and competition in Christchurch, Canterbury, New Zealand.">
+  <meta name="description" content="Website of the Christchurch Freediving Club: freediving and apnea training, education, and competition in Christchurch, Canterbury, New Zealand.">
 
   <meta property="og:title" content="Christchurch Freediving Club">
   <meta property="og:description" content="Website of the Christchurch Freediving Club: freedive and apnea training, education, and competition in Christchurch, Canterbury, New Zealand.">
@@ -15,7 +15,7 @@
   <meta property="twitter:title" content="Christchurch Freediving Club">
   <meta property="twitter:description" content="Website of the Christchurch Freediving Club: freedive and apnea training, education, and competition in Christchurch, Canterbury, New Zealand.">
   <meta property="twitter:image" content="https://www.chchfreediving.nz/assets/octo-favicon.png">
- </head>
+</head>
 <body>
   <div class="header" id="header">
     <a class="header-item home" href="index.html">CFC</a>
@@ -27,13 +27,9 @@
     <a class="header-item" href="contact.html">Contact</a>
   </div>
   <div class="body">
-    <h1 class="second-page">Privacy Policy</h1>
-    <span class="text">
-      <p>This site does not use cookies. We do not collect any tracking information (e.g., ip addresses) or use any web analytics. We use Google forms; these are managed by Google and Google may use cookies or collect information on how you use those forms. For more information, see <a href="https://policies.google.com/privacy">Google's privacy policy</a>.</p>
-      <p>When you submit personal information on this website it is retained by Christchurch Freediving Club. We will only share it with others outside the club if legally obliged to do so. Within the club, your information will only be handled by members of the committee, or club members who have been delegated a task by the committee which requires your personal information. Personal information will be deleted when it is no longer needed.</p>
-      <p>Our full <a href="resources/cfc-privacy.pdf">privacy policy</a> describes in more detail how we handle your personal information.</p>
-    </span>
+    {% block body %}{% endblock %}
   </div>
   <div class="footer">Copyright 2020 Christchurch Freediving Club. <a href="privacy.html">Privacy policy</a>. <a href="credits.html">Credits</a>.</div>
 </body>
+{% block script %}{% endblock %}
 </html>

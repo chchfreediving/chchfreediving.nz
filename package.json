@@ -1,0 +1,26 @@
+{
+  "name": "chchfreediving.nz",
+  "version": "1.0.0",
+  "description": "Christchurch Freediving Club website",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp-nunjucks-render": "^2.2.3",
+    "gulp": "^4.0.2"
+  },
+  "devDependencies": {
+    "del": "^6.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/chchfreediving/chchfreediving.nz.git"
+  },
+  "author": "Nick Cameron",
+  "license": "CC-BY-4.0",
+  "bugs": {
+    "url": "https://github.com/chchfreediving/chchfreediving.nz/issues"
+  },
+  "homepage": "https://github.com/chchfreediving/chchfreediving.nz#readme"
+}
