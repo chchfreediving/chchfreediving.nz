@@ -20,10 +20,9 @@ Which will create the website in a `target` directory.
 
 ## To deploy
 
-Upload files in the root directory, and the assets and resources directories to a server (images directory is not needed).
+Upload the contents of the target directory.
 
 # TODO
 
 * gulp
   - deploy task
-  - generate news
