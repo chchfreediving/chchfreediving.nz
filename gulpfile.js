@@ -6,7 +6,7 @@ const collect = require("gulp-collect");
 // Render nunjucks source to html.
 function nunjucks() {
     return newsItems(
-        news => gulp.src('src/**/*.njk')
+        news => gulp.src('src/*.njk')
             .pipe(nunjucksRender({
                 path: ['src/templates'],
                 // Pass in the news items, only used by news.njk.
@@ -49,12 +49,17 @@ function copyAssets() {
         .pipe(gulp.dest('./target/assets'));
 }
 
+function copyResources() {
+    return gulp.src('./resources/*')
+        .pipe(gulp.dest('./target/resources'));
+}
+
 function copyCss() {
     return gulp.src('./src/*.css')
         .pipe(gulp.dest('./target'));
 }
 
-exports.build = gulp.parallel(nunjucks, copyCss, copyAssets);
+exports.build = gulp.parallel(nunjucks, copyCss, copyAssets, copyResources);
 exports.clean = function() {
     return del('target');
 }
