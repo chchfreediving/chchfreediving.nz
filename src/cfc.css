@@ -332,4 +332,15 @@ p.form {
   span.column {
     margin: 0;
   }
+
+  a.contents-item {
+    font-size: 18px;
+
+    width: 100px;
+    height: 20px;
+    padding: 10px;
+    padding-top: 90px;
+    margin: 10px;
+    border-radius: 2px;
+  }
 }
