@@ -147,7 +147,6 @@ img.row {
   margin-bottom: 40px;
 }
 
-/* TODO small displays https://www.w3schools.com/howto/howto_js_topnav_responsive.asp */
 div.header {
   top: 0;
   width: calc(100% - 26px);
@@ -188,12 +187,25 @@ a.header-item.home {
   left: 18px;
 }
 
+a.header-item.menu {
+  font-size: 28px;
+  cursor: default;
+  display: none;
+}
+
+hr.header-item {
+  display: none;
+  width: 100%;
+  background-color: #f8fcf9; height: 1px; border: 0;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
 div.footer {
   flex-shrink: 0;
   color: white;
   font-size: 10px;
   text-align: center;
-  /*margin-top: 10px;*/
   padding-top: 10px;
   padding-bottom: 10px;
   background-image: url("assets/water-100.jpg");
@@ -269,4 +281,27 @@ a.contents-item {
 p.form {
   display: block;
   width: 800px;
+}
+
+/* Styles for small screens */
+@media (max-width: 800px) {
+  a.header-item.item {
+    display: none;
+  }
+
+  a.header-item.home {
+    top: 20px;
+  }
+
+  a.header-item.menu {
+    display: inline;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
+  .form {
+    width: 100%;
+  }
 }

@@ -19,12 +19,15 @@
 <body>
   <div class="header" id="header">
     <a class="header-item home" href="index.html">CFC</a>
-    <a class="header-item" href="start.html">Start freediving</a>
-    <a class="header-item" href="join.html">Joining CFC</a>
-    <a class="header-item" href="train.html">Training with CFC</a>
-    <a class="header-item" href="news.html">News</a>
-    <a class="header-item" href="resources.html">Resources</a>
-    <a class="header-item" href="contact.html">Contact</a>
+    <a class="header-item menu" id="open-menu" onclick="openMenu()">☰</a>
+    <a class="header-item menu" id="close-menu" onclick="closeMenu()">x</a>
+    <hr class="header-item item">
+    <a class="header-item item" href="start.html">Start freediving</a>
+    <a class="header-item item" href="join.html">Joining CFC</a>
+    <a class="header-item item" href="train.html">Training with CFC</a>
+    <a class="header-item item" href="news.html">News</a>
+    <a class="header-item item" href="resources.html">Resources</a>
+    <a class="header-item item" href="contact.html">Contact</a>
   </div>
   <div class="body">
     {% block body %}{% endblock %}
@@ -32,4 +35,25 @@
   <div class="footer">Copyright 2020 Christchurch Freediving Club. <a href="privacy.html">Privacy policy</a>. <a href="credits.html">Credits</a>.</div>
 </body>
 {% block script %}{% endblock %}
+<script>
+document.getElementById('close-menu').style.display = 'none';
+
+function openMenu() {
+  document.getElementById('open-menu').style.display = 'none';
+  document.getElementById('close-menu').style.display = 'inline';
+
+  for (let e of document.getElementsByClassName('header-item item')) {
+    e.style.display = 'block';
+  }
+}
+
+function closeMenu() {
+  document.getElementById('close-menu').style.display = 'none';
+  document.getElementById('open-menu').style.display = 'inline';
+
+  for (let e of document.getElementsByClassName('header-item item')) {
+    e.style.display = 'none';
+  }
+}
+</script>
 </html>
