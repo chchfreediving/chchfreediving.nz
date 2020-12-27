@@ -161,6 +161,8 @@ div.header {
   font-weight: 500;
   font-size: 17px;
 
+  /* This nonsense is for the front page so that the header lines up with the
+     cover image during the 'drop in' transition */
   background-color: #142D38;
   background-image: url("assets/water-4k.jpg");
   background-repeat: no-repeat;
@@ -284,7 +286,26 @@ p.form {
 }
 
 /* Styles for small screens */
+@media (max-width: 1120px) {
+  span.text {
+    max-width: calc(100% - 40px);
+  }
+
+  .form {
+    width: 100%;
+    margin: 0;
+  }
+}
+
 @media (max-width: 800px) {
+  div.header.at-top {
+    transform: translateY(-60px);
+  }
+
+  div.header {
+    background-image: none;
+  }
+
   a.header-item.item {
     display: none;
   }
@@ -298,10 +319,17 @@ p.form {
   }
 
   h1 {
-    font-size: 50px;
+    font-size: 44px;
+  }
+}
+
+@media (max-width: 500px) {
+  .column {
+    width: 100%;
+    margin: 0;
   }
 
-  .form {
-    width: 100%;
+  span.column {
+    margin: 0;
   }
 }
