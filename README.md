@@ -20,9 +20,4 @@ Which will create the website in a `target` directory.
 
 ## To deploy
 
-Upload the contents of the target directory.
-
-# TODO
-
-* gulp
-  - deploy task
+Upload the contents of the target directory. (See deploy.sh).
