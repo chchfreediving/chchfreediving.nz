@@ -281,8 +281,7 @@ a.contents-item {
 }
 
 p.form {
-  display: block;
-  width: 800px;
+  max-width: 800px;
 }
 
 /* Styles for small screens */
